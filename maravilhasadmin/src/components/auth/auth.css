@@ -1,0 +1,189 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.login{
+    width: 100%;
+}
+.tabela{
+    width: 100%;
+}
+.boas-vindas{
+    border: pink solid 1px;
+    background-color: pink;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 30px 10px;
+    max-width: 50%;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.boas-vindas hr{
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+}
+.info,.info-list{
+    position: sticky;
+    top:0;
+    margin: 100px  60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+    cursor: pointer;  
+}
+.info{
+    width: 5%;
+    color: whitesmoke;
+}
+.info-list{
+    width: 30%;
+    color: whitesmoke;
+}
+.info-box{
+    border: solid 1px #0069ff;
+    font-weight: bolder;
+    background: #0069ff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 100%;
+}
+.info-listed{
+    padding: 10px;
+    border: #0069ff solid 1px;
+    font-weight: bolder;
+    background:  #0069ff;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.listed-links{
+    color: black;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+}
+.link{
+    padding: 5px;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+}
+.link:hover{
+    font-size: 20px;
+    color: red;
+}
+.area-administrativa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-tabela{
+    margin: 20px 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,0.1);
+}
+.maravilhas-little strong{
+    background: linear-gradient(67deg, rgba(0,0,0,0.001) 45%, rgba(0,0,0,0.2) 55%);
+    padding: 6px;
+    border-top-right-radius:17px ;
+}
+.adm{
+    margin: 0  100px;
+}
+.card-login{
+    margin: 10%  20%;
+    border: rgba(0,0,0,0.05) 1px solid;
+    border-radius:6px;
+    padding: 10px;
+    width: 40%;
+    height: 350px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    background: linear-gradient(63deg, white 45%, whitesmoke 55% );
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.login-text{
+    color: #0069ff ;
+}
+.login-input{
+    border: rgba(0,0,0,0.2) solid 0.5px;
+    outline: none;
+    padding: 5px;
+    width: 60%;
+}
+.button{
+    width: 60%;
+    background: linear-gradient(63deg, #007bff 45%,#0069ff 55%);
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: white;
+}
+.failed{
+    margin-bottom:100px;
+}
+.cardError{
+    margin-top: -60px;
+    font-weight:bold ;
+}
+.logout{
+    cursor:pointer;
+}
+.rotatePhone{
+    display: none;
+}
+@media(max-width:540px){
+    .login{
+        display: none;
+    }
+    body{
+        background-color: black;
+    }
+    .tabela{
+        display: none;
+    }
+    .auth{
+        background-color: black;
+        padding: 60px;
+        overflow-x: hidden;
+        height: 800px;
+        color: white;
+    }
+    .rotatePhone{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:700px){
+    .adm strong{
+        display: none;
+    }
+}
+@media(max-width:750px){
+    .card-login{
+        width: 60%;
+    }
+}
+@media(max-width:800px){
+    .info,.info-list{
+        margin-left: 20%;
+    }
+    .info{
+        height:50px ;
+        width: 50px;
+    }
+
+}
